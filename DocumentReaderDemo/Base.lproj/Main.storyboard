@@ -1,26 +1,106 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rkH-8y-5hG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="n33-IP-ZYt">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9gn-UF-xlG" customClass="ViewController" customModule="DocumentReaderDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Jl7-A5-T2E"/>
+                        <viewControllerLayoutGuide type="bottom" id="H9E-kA-B7m"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="qyw-8i-2Bk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbr-pM-KAe">
+                                <rect key="frame" x="74" y="363" width="227" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="227" id="9d4-zr-wsn"/>
+                                    <constraint firstAttribute="height" constant="30" id="Jv0-PZ-LRM"/>
+                                </constraints>
+                                <state key="normal" title="UIDocumentInteractionController"/>
+                                <connections>
+                                    <action selector="openUsingDocumentReder:" destination="9gn-UF-xlG" eventType="touchUpInside" id="SEW-qb-XqW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQl-0y-wv0">
+                                <rect key="frame" x="116" y="318" width="142" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="1Ei-OI-fbe"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kua-Mc-6SH"/>
+                                </constraints>
+                                <state key="normal" title="QLPreviewController"/>
+                                <connections>
+                                    <action selector="buttontappedWithSender:" destination="9gn-UF-xlG" eventType="touchUpInside" id="abB-Uj-64n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FkP-NQ-8VX">
+                                <rect key="frame" x="164" y="470" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="qD6-Nn-LMA" kind="show" id="bQD-Je-Diz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hQl-0y-wv0" firstAttribute="centerY" secondItem="qyw-8i-2Bk" secondAttribute="centerY" id="52J-zh-jNN"/>
+                            <constraint firstItem="Kbr-pM-KAe" firstAttribute="top" secondItem="hQl-0y-wv0" secondAttribute="bottom" constant="15" id="H2f-Zn-k9R"/>
+                            <constraint firstItem="hQl-0y-wv0" firstAttribute="centerX" secondItem="qyw-8i-2Bk" secondAttribute="centerX" id="k6A-7a-McS"/>
+                            <constraint firstItem="Kbr-pM-KAe" firstAttribute="centerX" secondItem="qyw-8i-2Bk" secondAttribute="centerX" id="p91-TR-wLy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p1O-NR-nbq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SqI-Go-zm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="404" y="196.55172413793105"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Le2-pu-Her">
+            <objects>
+                <viewController id="qD6-Nn-LMA" customClass="SecondViewController" customModule="DocumentReaderDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dg4-Un-s2C"/>
+                        <viewControllerLayoutGuide type="bottom" id="F6T-D5-fA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pcs-R7-iu6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOm-IU-gYx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1137" y="153"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8ty-UO-Fxd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rkH-8y-5hG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i6N-Dd-fn4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9gn-UF-xlG" kind="relationship" relationship="rootViewController" id="3HZ-xa-6GK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQq-tT-eJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-535.20000000000005" y="196.55172413793105"/>
         </scene>
     </scenes>
 </document>
