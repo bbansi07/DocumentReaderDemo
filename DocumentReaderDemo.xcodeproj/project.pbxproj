@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC7176551ED2C09400A82BEE /* mypdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC7176541ED2C09400A82BEE /* mypdf.pdf */; };
 		DCBB8B2C1ECF14C100370372 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB8B2B1ECF14C100370372 /* AppDelegate.swift */; };
 		DCBB8B311ECF14C100370372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBB8B2F1ECF14C100370372 /* Main.storyboard */; };
 		DCBB8B331ECF14C100370372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBB8B321ECF14C100370372 /* Assets.xcassets */; };
 		DCBB8B361ECF14C100370372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBB8B341ECF14C100370372 /* LaunchScreen.storyboard */; };
 		DCBB8B3E1ECF14F300370372 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB8B3D1ECF14F300370372 /* ViewController.swift */; };
-		DCBB8B651ECF2D9F00370372 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBB8B641ECF2D9F00370372 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC7176541ED2C09400A82BEE /* mypdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mypdf.pdf; sourceTree = "<group>"; };
 		DCBB8B281ECF14C100370372 /* DocumentReaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentReaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBB8B2B1ECF14C100370372 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCBB8B301ECF14C100370372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		DCBB8B351ECF14C100370372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCBB8B371ECF14C100370372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCBB8B3D1ECF14F300370372 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCBB8B641ECF2D9F00370372 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,6 @@
 		DCBB8B1F1ECF14C100370372 = {
 			isa = PBXGroup;
 			children = (
-				DCBB8B641ECF2D9F00370372 /* SecondViewController.swift */,
 				DCBB8B2A1ECF14C100370372 /* DocumentReaderDemo */,
 				DCBB8B291ECF14C100370372 /* Products */,
 			);
@@ -57,6 +56,7 @@
 		DCBB8B2A1ECF14C100370372 /* DocumentReaderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DC7176541ED2C09400A82BEE /* mypdf.pdf */,
 				DCBB8B2B1ECF14C100370372 /* AppDelegate.swift */,
 				DCBB8B3D1ECF14F300370372 /* ViewController.swift */,
 				DCBB8B2F1ECF14C100370372 /* Main.storyboard */,
@@ -126,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCBB8B361ECF14C100370372 /* LaunchScreen.storyboard in Resources */,
+				DC7176551ED2C09400A82BEE /* mypdf.pdf in Resources */,
 				DCBB8B331ECF14C100370372 /* Assets.xcassets in Resources */,
 				DCBB8B311ECF14C100370372 /* Main.storyboard in Resources */,
 			);
@@ -138,7 +139,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBB8B651ECF2D9F00370372 /* SecondViewController.swift in Sources */,
 				DCBB8B3E1ECF14F300370372 /* ViewController.swift in Sources */,
 				DCBB8B2C1ECF14C100370372 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +304,7 @@
 				DCBB8B3C1ECF14C100370372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
